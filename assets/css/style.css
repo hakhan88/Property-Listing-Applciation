@@ -1,0 +1,298 @@
+.w3-content.w3-display-container {
+	position  : relative;
+    margin-top: 80px;
+}
+
+.navbar.fixed-top.navbar-toggleable-md.navbar-light {
+	background-color: white; 
+}
+
+.intro-header{
+	background-color: #0f736b;
+    position        : relative;
+    top             : -70px;
+}
+
+.intro-message-input-feilds {
+	position  : relative;
+    left      : 27%;
+    padding   : 20px 0px 20px 0px;
+    margin-top: 5px;
+}
+
+.intro-message-search-button {
+	position                          : relative;
+    left                              : -5px;
+    background-color                  : rgb(187, 216, 99);
+    color                             : white;
+    -webkit-border-top-right-radius   : 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	-moz-border-radius-topright       : 10px;
+	-moz-border-radius-bottomright    : 10px;
+	border-top-right-radius           : 10px;
+    border-bottom-right-radius        : 10px;
+    width                             : 120px;
+    height                            : 40px;
+}
+
+.intro-message-input-style {
+	-webkit-border-top-left-radius   : 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-topleft       : 10px;
+	-moz-border-radius-bottomleft    : 10px;
+	border-top-left-radius           : 10px;
+	border-bottom-left-radius        : 10px;
+	height                           : 40px;
+	width                            : 350px;
+}
+
+
+.content-section-b {
+    background-color: #eae7e7;
+}
+
+.latest-news-and-blogs {
+	margin-top: 30px;
+}
+
+.latest-news-and-blogs-items {
+	width  : 85%;
+    padding: 10px;
+}
+
+
+.latest-news-and-blogs-items-date {
+	background-color     : #009e64;
+    width                : 100px;
+    padding              : 6px 0px 0px 6px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius   : 10px;
+    border-radius        : 10px;
+    font-size            : 12px;
+}
+
+.latest-news-and-blogs-items-author p {
+	font-size: 8px;
+}
+
+
+.latest-properties-details-items {
+	background-color: #eae7e7;
+    padding         : 30px;
+    border-style    : dotted;
+    border-width    : 1px;
+    border-color    : #b7bbbf;
+    margin-bottom   : 35px;
+}
+
+.latest-properties-details-small {
+	float                : left;
+    padding              : 0px 5px 0px 5px;
+    background-color     : #11857a;
+    margin               : 5px;
+    color                : white;
+    -webkit-border-radius: 5px;
+    -moz-border-radius   : 5px;
+    border-radius        : 5px;
+    height               : 25px;
+}
+
+.latest-properties-details-available {
+	float                : left;
+    padding              : 2px 5px 0px 5px;
+    background-color     : rgb(187, 216, 99);
+    margin               : 5px;
+    color                : white;
+    -webkit-border-radius: 5px;
+    -moz-border-radius   : 5px;
+    border-radius        : 5px;
+    height               : 25px;
+}
+
+.latest-properties-details-items-image {
+	width: 150px;
+}
+
+.latest-properties-details-button {
+	margin               : 10px;
+    padding              : 5px;
+    background-color     : #11857a;
+    -webkit-border-radius: 10px;
+    -moz-border-radius   : 10px;
+    border-radius        : 10px;
+    color                : white;
+}
+
+.latest-properties-details-price {
+	float: left;
+}
+
+footer{
+	padding-top: 40px;
+}
+
+
+/*listing page styles*/
+
+.listing-page-image {
+	width : 200px;
+	height: 200px;
+}
+
+.listing-page-elements {
+	background-color: #eae7e7;
+    padding         : 20px;
+    border-style    : dotted;
+    border-width    : 1px;
+    border-color    : #b7bbbf;
+}
+
+.latest-properties-details-available-div-line {
+	color           : black;
+    background-color: #c3c3c3;
+    height          : 1px;
+    width           : 750px;
+}
+
+
+.latest-properties-details-available-div-buttons {
+	float                : left;
+    padding              : 2px 5px 0px 5px;
+    background-color     : rgb(138, 138, 138);
+    margin               : 5px;
+    color                : white;
+    -webkit-border-radius: 5px;
+    -moz-border-radius   : 5px;
+    border-radius        : 5px;
+    height               : 25px;
+}
+
+.floatMiddle {
+    left    : 30%;
+    position: relative;
+}
+
+.developerProfilePicture {
+    border       : 3px solid #0f8376;
+    border-radius: 72px;
+    max-width    : 90px !important;
+    min-height   : 90px !important;
+    margin-bottom: 20px;
+}
+
+.floatMiddleOfLeft {
+    left    : 20%;
+    position: relative;   
+}
+
+a.pagination-link {
+    padding   : 8px 13px;
+    margin    : 5px;
+    background: #f4f4f4;
+    border    : 1px #ccc solid;
+}
+
+.pagination-links-styling {
+    position  : relative;
+    left      : 150px;
+    margin-top: 30px;
+}
+
+.loginForm {
+    position: relative;
+    left    : 33%;
+}
+
+.rihaishButton {
+    background-color: #128576;
+    border-color    : #128576;
+}
+
+.rihaishButton:hover {
+    background-color: #3bb0a9;
+    border-color    : #3bb0a9;
+}
+
+.textAlignCenter {
+    text-align: center;
+}
+
+.linksToCities {
+    width  : 100%;
+    height : 50px;
+    padding: 5px;
+}
+
+.linksToCitiesButton{
+    color: #c3d26d;
+}
+
+.linksToCitiesButton:hover{
+    background-color: #3bb0a9;
+    color           : #e6f1ac;
+}
+
+.bannerText {
+    position             : relative;
+    top                  : -225px;
+    background           : #1d1d1d;
+    opacity              : 0.6;
+    color                : white;
+    font-size            : 30px;
+    max-width            : 450px;
+    left                 : 25%;
+    padding              : 5px 10px;
+    border-style         : solid;
+    border-width         : 1px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius   : 5px;
+    border-radius        : 5px;
+}
+
+.section-heading-video {
+    position: relative;
+    left    : 20%;
+}
+
+.returnsOfRealEstate {
+    background-color: #72b7a4;
+    top             : -445px;
+    position        : relative;
+}
+
+.returnsOfRealEstateIndividual {
+    position        : relative;
+    height          : 200px;
+    width           : 200px;
+    background-color: white;
+    left            : 15%;
+    margin          : 30px;
+    border-style    : solid;
+    border-width    : 1px;
+    border-color    : #4b7b42;
+}
+
+.returnIndividualFontAwesome {
+    font-size: 70px;
+    position : relative;
+    left     : 35%;
+} 
+
+.returnIndividualParagraph {
+    text-align: center;
+}
+
+.containerMerge {
+    height: 600px !important;
+}
+
+.returnsOfRealEstateImage {
+    position: relative;
+    opacity : 0.3;
+    height  : 450px;
+    width   : 100%;
+    z-index : 1;
+}
+
+
+
