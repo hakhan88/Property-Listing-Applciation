@@ -30,14 +30,23 @@
 		public function individual_trends_page_data($trendId = null){
 			$data = null;
 			$data['trends_data'] = $this->trends_model->get_individual_trends($trendId);
-			$multimedia_ids = $data['trends_data']['trends_item'];
-			$multimedia_ids = explode(',', $multimedia_ids);
+			$graph_id = $data['trends_data']['graph_item'];
+			$graph_id = explode(',', $graph_id);
 			
-			foreach ($multimedia_ids as $key => $value) {
-				$data['trends_data']['images'][$key] = $this->multimedia_model->get_multimedia((int)$value);
+			// $this->load->d($data);die;
+
+			foreach ($graph_id as $key => $value) {
+				$data['trends_data']['graph'][$key] = $this->Graph_trend_model->get_graph((int)$value);
 			}
 				
+			$graph_json = $data['trends_data']['graph'][0][0]['graph_values'];
+
+			$json_decode = json_decode($graph_json, true);
+
+			$data['trends_data']['graph'] = $json_decode;
+
 			// $this->load->d($data);die;
+
 			$this->load->view('templates/header');
 			$this->load->view('pages/Trend_individual', $data);
 			$this->load->view('templates/footer');

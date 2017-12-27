@@ -19,22 +19,21 @@
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="section-heading"><?php echo $trends_data['name']; ?></h2>
+                        
                         <?php  
-                            $images = $trends_data['images'];
-                            foreach ($images as $key => $images_value) {
-                                if (empty($images_value)) {
-                                    continue;
-                                }
+                            $graph = json_encode($trends_data['graph']);
                         ?>
-                                <div class="row">
-            						<div class="col-lg-12">
-            							<img src="<?php echo $images_value[0]['media_file']; ?>">
-            						</div>
-            					</div> 
-                            
-                        <?php
-                            }
-                        ?>
+
+                        <script type="text/javascript">
+                            var graphData = <?php echo $graph; ?>;
+                            var oData = graphData;
+                        </script>
+
+                        <div class="canvasWrapper">
+                            <canvas id='c'></canvas>
+                            <div class="canvasLabel"></div>
+                        </div>
+                        
                 </div>
             </div>
         </div>

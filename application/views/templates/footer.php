@@ -116,6 +116,10 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="<?php echo base_url(); ?>assets/js/bootstrap.min.js"></script>
 
+    
+    <!-- importing JS for the graphs -->
+    <script src="<?php echo base_url(); ?>assets/js/graph.js"></script>
+
 </body>
 
 </html>
