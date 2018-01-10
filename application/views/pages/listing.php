@@ -53,35 +53,41 @@
                                         </i>
                                     </li>
                                     <li class="">
-                                        <i class="fa fa-bed">: Type:</i>
-                                        <?php echo $listing_data_individual['type']; ?>
+                                        <i class="fa fa-home">: Type:
+                                            <?php echo $listing_data_individual['type']; ?>
+                                        </i>
                                     </li>
                                     <li class="">
-                                        <i class="fa fa-bed">: City:</i>
-                                        <?php echo $listing_data_individual['city']; ?>
+                                        <i class="fa fa-building">: City:
+                                            <?php echo $listing_data_individual['city']; ?>
+                                        </i>
                                     </li>
                                     <li class="">
-                                        <i class="fa fa-bed">: Size:</i>
-                                        <?php echo $listing_data_individual['size']; ?>
+                                        <i class="fa fa-home">: Size:
+                                            <?php echo $listing_data_individual['size']; ?>
+                                        </i>
                                     </li>
                                     <li class="">
-                                        <i class="fa fa-bed">: Developer:</i>
-                                        <?php echo $listing_data_individual['by_developer']; ?>
+                                        <i class="fa fa-users">: Developer:
+                                            <?php echo $listing_data_individual['by_developer']; ?>
+                                        </i>
                                     </li>
                                     <li class="">
-                                        <i class="fa fa-bed">: Price:</i>
-                                        <?php echo $listing_data_individual['price']; ?>
+                                        <i class="fa fa-usd">: Price:
+                                            <?php echo $listing_data_individual['total_price']; ?>
+                                        </i>
                                     </li>
                                     <li class="">
-                                        <i class="fa fa-bed">: Bathroom:</i>
-                                        <?php echo $listing_data_individual['bathrooms']; ?>
+                                        <i class="fa fa-shower">: Bathroom:
+                                            <?php echo $listing_data_individual['bathrooms']; ?>
+                                        </i>
                                     </li>
                                 </ul>
                             </div>
                             
                             <div class="clearfix"></div>
-
                             <!-- buttons -->
+                            <!-- 
                             <div class="latest-properties-details-available-div-buttons">
                                 <p>
                                     <i class="fa fa-list-alt" aria-hidden="true">Details</i>
@@ -97,6 +103,7 @@
                                     <i class="fa fa-list-alt" aria-hidden="true">Details</i>
                                 </p>
                             </div>
+                            -->
                             <div class="clearfix"></div>
                             <button class="latest-properties-details-button">BOOK NOW</button>
                         </div>

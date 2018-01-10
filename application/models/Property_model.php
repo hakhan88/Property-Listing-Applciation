@@ -11,7 +11,8 @@
 
 			$this->db->order_by('property.id', 'DESC');
 			$this->db->join('multimedia', 'property.multimedia_id = multimedia.multimedia_id');
-
+			$this->db->join('payment', 'property.payment_id = payment.payment_id ');
+			
 			if ($slug) {
 				$query = $this->db->get_where('property', array('city' => $slug));
 			} else {

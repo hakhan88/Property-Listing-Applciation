@@ -15,7 +15,9 @@
 ?>
 
 <!-- insert blog form -->
-Insert blogs 
+<h1>	
+	Insert blogs 
+</h1>
 <?php echo form_open_multipart('admin/insert_blog'); ?>
 	<div class="row loginForm">
 		<div class="col-md-4 col-md-offset-4">
@@ -36,9 +38,16 @@ Insert blogs
 <?php echo form_close(); ?>
 
 
+<br>
+<br>
+<br>
+<br>
+
 
 <!-- insert blog form -->
-Insert Listings 
+<h1>	
+	Insert Listings  
+</h1>
 <?php echo form_open_multipart('admin/insert_listing'); ?>
 	<div class="row loginForm">
 		<div class="col-md-4 col-md-offset-4">
@@ -63,6 +72,16 @@ Insert Listings
 			</div>
 			<div class="form-group">
 				<input type="text" class="form-control" name="longitude" placeholder="longitude">
+			</div>
+
+			<div class="form-group">
+				<input type="text" class="form-control" name="bathroom_number" placeholder="bathroom_number">
+			</div>
+			<div class="form-group">
+				<input type="text" class="form-control" name="city" placeholder="city">
+			</div>
+			<div class="form-group">
+				<input type="text" class="form-control" name="developer" placeholder="developer">
 			</div>
 			
 			Payment
@@ -96,9 +115,17 @@ Insert Listings
 <?php echo form_close(); ?>
 
 
+<br>
+<br>
+<br>
+<br>
+<br>
+
 
 <!-- insert trends form -->
-Insert Trends 
+<h1>	
+	Insert Trends  
+</h1>
 <?php echo form_open_multipart('admin/insert_trends'); ?>
 	<div class="row loginForm">
 		<div class="col-md-4 col-md-offset-4">
@@ -106,42 +133,65 @@ Insert Trends
 			<div class="form-group">
 				<input type="text" class="form-control" name="name" placeholder="name">
 			</div>
-			<!-- image for multimedia -->
+			
+			
 			<div class="form-group">
-				<label>Upload Image</label>
-				<input type="file" name="image[]" size="250" enctype="multipart/form-data">
-			</div>
-			<!-- image for multimedia -->
-			<div class="form-group">
-				<label>Upload Image</label>
-				<input type="file" name="image[]" size="250" enctype="multipart/form-data">
+				<input type="text" class="form-control" name="year_1" placeholder="year_1">
 			</div>
 			<div class="form-group">
-				<label>Upload Image</label>
-				<input type="file" name="image[]" size="250" enctype="multipart/form-data">
+				<input type="text" class="form-control" name="property_value_1" placeholder="property_value_1">
+			</div>
+
+			<div class="form-group">
+				<input type="text" class="form-control" name="year_2" placeholder="year_2">
 			</div>
 			<div class="form-group">
-				<label>Upload Image</label>
-				<input type="file" name="image[]" size="250" enctype="multipart/form-data">
+				<input type="text" class="form-control" name="property_value_2" placeholder="property_value_2">
+			</div>
+			
+			<div class="form-group">
+				<input type="text" class="form-control" name="year_3" placeholder="year_3">
 			</div>
 			<div class="form-group">
-				<label>Upload Image</label>
-				<input type="file" name="image[]" size="250" enctype="multipart/form-data">
+				<input type="text" class="form-control" name="property_value_3" placeholder="property_value_3">
+			</div>
+
+			<div class="form-group">
+				<input type="text" class="form-control" name="year_4" placeholder="year_4">
 			</div>
 			<div class="form-group">
-				<label>Upload Image</label>
-				<input type="file" name="image[]" size="250" enctype="multipart/form-data">
+				<input type="text" class="form-control" name="property_value_4" placeholder="property_value_4">
 			</div>
+			
+			<div class="form-group">
+				<input type="text" class="form-control" name="year_5" placeholder="year_5">
+			</div>
+			<div class="form-group">
+				<input type="text" class="form-control" name="property_value_5" placeholder="property_value_5">
+			</div>
+
+			
+
+
+
+
 			<button type="submit" class="btn btn-primary btn-block rihaishButton">Submit</button>
 		</div>
 	</div>
 <?php echo form_close(); ?>
 
 
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
 <!-- insert agent builder form -->
-Insert featured agents  
+<h1>	
+	Insert featured agents   
+</h1>
 <?php echo form_open_multipart('admin/insert_agents'); ?>
 	<div class="row loginForm">
 		<div class="col-md-4 col-md-offset-4">

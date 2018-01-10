@@ -74,6 +74,9 @@
 				'trend_id'       => 1,
 				'size'           => $this->input->post('size'),
 				'number_bedroom' => $this->input->post('number_bedroom'),
+				'bathrooms'      => $this->input->post('bathroom_number'),
+				'city'           => $this->input->post('city'),
+				'by_developer'   => $this->input->post('developer'),
 				'payment_id'     => $payment_id,
 				'maps_id'        => $added_maps_id,
 				'latitude'       => $this->input->post('latitude'),
@@ -86,31 +89,34 @@
 			return $this->db->insert('property', $property_data);
 		}
 
-		public function insert_trends_data($photo){
-			foreach ($photo as $key => $photo_value) {
-				$multimedia_data = array(
-					'media_file' => base_url().'assets/images/posts/'.$photo_value['file_name'],
-				);
-				$this->db->insert('multimedia', $multimedia_data);
-				$this->db->limit(1);
-				$this->db->order_by('multimedia.multimedia_id', 'DESC');			
-				$query = $this->db->get('multimedia');
+		public function insert_trends_data( $photo = null ){
+			$graph_data = array(
+				$this->input->post('year_1') => $this->input->post('property_value_1'),
+				$this->input->post('year_2') => $this->input->post('property_value_2'),
+				$this->input->post('year_3') => $this->input->post('property_value_3'),
+				$this->input->post('year_4') => $this->input->post('property_value_4'),
+				$this->input->post('year_5') => $this->input->post('property_value_5'),
+			);
 
-				$added_image[] = $query->result_array();
-			}
-				
-			$id_array = '';
+			$graph_json = json_encode($graph_data);
 
-			foreach ($added_image as $key => $added_image_value) {
-				$id_array = $id_array.', '.$added_image_value[0]['multimedia_id'];
-			}
+			$graph_data_input = array(
+				'graph_values' => $graph_json
+			);
+
+			$this->db->insert('graph', $graph_data_input);
+			$this->db->limit(1);
+			$this->db->order_by('graph.graph_id', 'DESC');			
+			$query = $this->db->get('graph');
+
+			$added_graph = $query->result_array()[0]['graph_id'];
+
+			//$this->load->d($added_graph);die;
 
 			$listings_data = array(
-				'name'           => $this->input->post('name'),
-				// 'size'       	 => $this->input->post('size'),
-				// 'category'       => $this->input->post('category'),
-				'trends_item'    => $id_array,
-				'created_on'     => date('d m Y'),
+				'name'        => $this->input->post('name'),
+				'graph_item'  => $added_graph,
+				'created_on'  => date('d m Y'),
 			);
 
 			// Insert user

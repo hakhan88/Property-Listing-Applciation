@@ -45,12 +45,16 @@
 
     <!-- Header -->
     <header class="intro-header">
-        <!-- <div class="container">
+        <!-- 
+
+        <div class="container">
             <div class="intro-message intro-message-input-feilds">
                 <input class="intro-message-input-style" type="" name="">
                 <button class="intro-message-search-button">Search <i class="fa fa-search"></i></button>
             </div>
-        </div> -->
+        </div> 
+
+        -->
         <div class="container linksToCities">
             <div class="row">
                 <a href="<?php echo base_url(); ?>/listing_filter/Lahore" target="_blank" class="btn btn-link col-lg-4 linksToCitiesButton">Lahore</a>
@@ -136,7 +140,7 @@
                     
                     <div class="container containerMerge">
                         
-                        <img class="returnsOfRealEstateImage" src="<?php echo base_url().'assets/img/pakistan-road-map.jpg'; ?>">
+                        <img class="returnsOfRealEstateImage" src="<?php echo base_url().'assets/img/pkout.png'; ?>">
                         <div class="returnsOfRealEstate">
                             <div class="row">
                                 <div class="col-lg-4">
