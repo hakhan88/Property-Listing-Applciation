@@ -46,41 +46,48 @@
                             <div class="clearfix"></div>
                                 
                             <div class="col-lg-6">
-                                <ul class="list-inline">
+                                <ul class="list-inline fontForListingItem">
                                     <li class="">
-                                        <i class="fa fa-bed">: Bedrooms: 
+                                        <i class="fa fa-bed fontListingItemAwesome">: 
+                                        </i>
+                                            <b class="fontListingItemDetails">Bedrooms:</b>
                                             <?php echo $listing_data_individual['number_bedroom']; ?>
-                                        </i>
                                     </li>
                                     <li class="">
-                                        <i class="fa fa-home">: Type:
+                                        <i class="fa fa-home fontListingItemAwesome">: 
+                                        </i>
+                                            <b class="fontListingItemDetails">Type:</b>
                                             <?php echo $listing_data_individual['type']; ?>
-                                        </i>
                                     </li>
                                     <li class="">
-                                        <i class="fa fa-building">: City:
+                                        <i class="fa fa-building fontListingItemAwesome">: 
+                                        </i>
+                                            <b class="fontListingItemDetails">City:</b>
                                             <?php echo $listing_data_individual['city']; ?>
-                                        </i>
                                     </li>
                                     <li class="">
-                                        <i class="fa fa-home">: Size:
+                                        <i class="fa fa-home fontListingItemAwesome">: 
+                                        </i>
+                                            <b class="fontListingItemDetails">Size:</b>
                                             <?php echo $listing_data_individual['size']; ?>
-                                        </i>
                                     </li>
                                     <li class="">
-                                        <i class="fa fa-users">: Developer:
+                                        <i class="fa fa-users fontListingItemAwesome">: 
+                                        </i>
+                                            <b class="fontListingItemDetails">Developer:</b>
                                             <?php echo $listing_data_individual['by_developer']; ?>
-                                        </i>
                                     </li>
                                     <li class="">
-                                        <i class="fa fa-usd">: Price:
+                                        <i class="fa fa-usd fontListingItemAwesome">: 
+                                        </i>
+                                            <b class="fontListingItemDetails">Price:</b>
                                             <?php echo $listing_data_individual['total_price']; ?>
-                                        </i>
                                     </li>
                                     <li class="">
-                                        <i class="fa fa-shower">: Bathroom:
-                                            <?php echo $listing_data_individual['bathrooms']; ?>
+                                        <i class="fa fa-shower fontListingItemAwesome">: 
                                         </i>
+                                            <b class="fontListingItemDetails">Bathroom:</b>
+                                            <?php echo $listing_data_individual['bathrooms']; ?>
                                     </li>
                                 </ul>
                             </div>

@@ -294,5 +294,16 @@ a.pagination-link {
     z-index : 1;
 }
 
+.fontForListingItem {
+    font-family: -webkit-pictograph;
+}
 
+.fontListingItemAwesome {
+    min-width: 30px;
+}
+
+.fontListingItemDetails {
+    min-width: 110px;
+    display  : inline-block;
+}
 
