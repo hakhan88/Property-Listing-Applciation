@@ -12,11 +12,9 @@ $route['listing_filter/(:any)'] = 'listing/index/$1';
 $route['blog'] = 'blog/index';
 $route['individual_blog/(:any)'] = 'blog/individual/$1';
 
-
 // routes for the forum (not using for now)
 $route['forum'] = 'forum/index';
 $route['individual_forum/(:any)'] = 'forum/individual/$1';
-
 
 // routes for the trends sections 
 $route['trends'] = 'trends/index';
@@ -25,7 +23,6 @@ $route['trends_individual/(:any)'] = 'trends/individual_trends_page_data/$1';
 // routes for the admin
 $route['admin'] = 'admin/index';
 
-
 // basic routes 
 $route['(:any)'] = 'pages/view/$1';
 $route['404_override'] = '';
@@ -33,16 +30,6 @@ $route['translate_uri_dashes'] = FALSE;
 
 // this is the route for the index page 
 $route['default_controller'] = 'pages/view';
-
-
-
-
-
-
-
-
-
-
 
 /*
 	the following routes are depricated but we shall keep them for reference
