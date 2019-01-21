@@ -8,6 +8,8 @@
 			$config['uri_segment'] = 3;
 			$config['attributes'] = array('class' => 'pagination-link');
 
+			var_dump('asdasd');die;
+
 			// Init Pagination
 			$this->pagination->initialize($config);	
 			$data['blogs'] = $this->get_blogs_page_data(FALSE, $config['per_page'], $offset);

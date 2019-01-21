@@ -296,6 +296,7 @@ a.pagination-link {
 
 .fontForListingItem {
     font-family: -webkit-pictograph;
+    min-width  : 600px;
 }
 
 .fontListingItemAwesome {
@@ -303,7 +304,7 @@ a.pagination-link {
 }
 
 .fontListingItemDetails {
-    min-width: 110px;
+    min-width: 210px;
     display  : inline-block;
 }
 
