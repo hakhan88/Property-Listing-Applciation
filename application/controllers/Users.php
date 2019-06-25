@@ -57,7 +57,7 @@
 					$this->session->set_flashdata('user_loggedin', 'You are now logged in');
 
 					// TODO:: check whether super admin or normal user
-					if ($user_id >=3 ) {
+					if ($user_id >= 10 ) {
 						redirect('listing');
 					} else {
 						redirect('admin');

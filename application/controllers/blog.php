@@ -18,7 +18,6 @@
 		}
 		
 		public function get_blogs_page_data($slug = FALSE, $limit = 2, $offset = FALSE){
-			// $this->load->d($offset);die;
 			$data = $this->blog_model->get_latest_blogs(FALSE, $limit, $offset);
 			return $data;
 		}
